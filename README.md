@@ -1,3 +1,3 @@
-# bonsai.bzh
+# Gwezennig
 
 https://bonsai.bzh
