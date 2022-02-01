@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Ribeye";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ribeye"),
+       url("ribeye.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("ribeye.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body {
+  background: #6c3;
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center;
+}
+.icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.icons a {
+  display: block;
+  opacity: 0.7;
+}
+.icons a:hover, .icons a:focus {
+  opacity: 0.9;
+}
+.icons a:active {
+  opacity: 1;
+}
+.icons a object {
+  pointer-events: none;
+}
+.center {
+  margin: 10px;
+}
+.center img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Ribeye", cursive;
+  text-shadow: 1px -1px 2px rgba(0, 0, 0, 0.3);
+  color: #efd;
+  text-align: center;
+}
+h1 {
+  font-size: 10vmin;
+}
+h2 {
+  font-size: 6vmin;
+}
