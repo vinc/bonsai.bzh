@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Slab"),
+       url("roboto.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("roboto.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
   font-family: "Ribeye";
   font-style: normal;
   font-weight: 400;
@@ -7,34 +15,66 @@
        url("ribeye.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 body {
-  background: #6c3;
-  display: grid;
-  height: 100vh;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2rem;
+  color: #333;
+}
+.m-0 {
   margin: 0;
-  place-items: center;
 }
-.icons {
+.fullscreen {
+  min-height: 100vh;
+}
+.grid {
+  display: grid;
+}
+.text-primary {
+  color: #6c3;
+}
+.text-white {
+  color: #efd;
+}
+a {
+  color: #6c3;
+}
+a:hover, a:focus {
+  color: #5b2;
+}
+a:active {
+  color: #4a1;
+}
+.bg-primary {
+  background: #6c3;
+  color: #efd;
+  text-shadow: 1px -1px 2px rgba(0, 0, 0, 0.3);
+}
+.social {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 2rem;
+  right: 2rem;
 }
-.icons a {
+.nav a {
   display: block;
   opacity: 0.7;
 }
-.icons a:hover, .icons a:focus {
+.nav a:hover, .nav a:focus {
   opacity: 0.9;
 }
-.icons a:active {
+.nav a:active {
   opacity: 1;
 }
-.icons a object {
+.nav a object {
   pointer-events: none;
 }
-.center {
+.text-center {
+  text-align: center;
+}
+.grid-center {
+  place-self: center;
   margin: 10px;
 }
-.center img {
+#landing img {
+  position: relative;
   max-width: 800px;
   width: 100%;
   height: auto;
@@ -45,13 +85,26 @@ h1, h2 {
   padding: 0;
   font-weight: normal;
   font-family: "Ribeye", cursive;
-  text-shadow: 1px -1px 2px rgba(0, 0, 0, 0.3);
-  color: #efd;
-  text-align: center;
 }
 h1 {
-  font-size: 10vmin;
+  font-size: 350%;
 }
 h2 {
-  font-size: 6vmin;
+  font-size: 200%;
+}
+.container {
+  max-width: 42rem;
+  padding: 0 1rem;
+  margin: 2rem 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+  .social {
+    right: 1rem;
+  }
 }
