@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "Ribeye";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ribeye"),
+       url("ribeye.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("ribeye.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 400;
@@ -7,12 +15,16 @@
        url("roboto.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
-  font-family: "Ribeye";
+  font-family: "Noto Sans Japanese";
   font-style: normal;
   font-weight: 400;
-  src: local("Ribeye"),
-       url("ribeye.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("ribeye.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Noto Sans Japanese"),
+       url("noto-sans-jp.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("noto-sans-jp.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.japanese {
+  font-family: "Noto Sans Japanese", sans-serif;
+  color: #666;
 }
 body {
   font-family: "Roboto Slab", serif;
